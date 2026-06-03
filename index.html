@@ -10,7 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://suffolkessexbuilder.co.uk">
     
-    <!-- Google AdSense -->
+    <!-- Google AdSense - Auto Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372101106094036" crossorigin="anonymous"></script>
     
     <style>
@@ -49,13 +49,8 @@
         /* Hero */
         .hero {
             text-align: center;
-            padding: 4rem 1rem;
+            padding: 3rem 1rem;
             background: rgba(0,0,0,0.4);
-        }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
         }
         
         .coming-soon {
@@ -66,6 +61,11 @@
             border-radius: 50px;
             font-weight: bold;
             margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
         
         .subhead {
@@ -101,20 +101,6 @@
         .countdown-label {
             font-size: 0.7rem;
             text-transform: uppercase;
-        }
-        
-        /* Ad Container */
-        .ad-container {
-            max-width: 1200px;
-            margin: 1rem auto;
-            padding: 0 1rem;
-            text-align: center;
-            min-height: 90px;
-            background: rgba(0,0,0,0.2);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         
         /* Services Preview */
@@ -249,17 +235,6 @@
     <div class="logo">SUFFOLK & ESSEX <span>BUILDER</span></div>
 </div>
 
-<!-- Top Ad -->
-<div class="ad-container">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9372101106094036"
-         data-ad-slot="9123456789"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
-
 <div class="hero">
     <div class="coming-soon">🚧 COMING SOON 🚧</div>
     <h1>Professional Builder<br><span style="color:#ff8c00;">Suffolk & Essex</span></h1>
@@ -272,17 +247,6 @@
         <div class="countdown-box"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
         <div class="countdown-box"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
     </div>
-</div>
-
-<!-- Mid Ad -->
-<div class="ad-container">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9372101106094036"
-         data-ad-slot="9123456790"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <!-- Services Preview -->
@@ -307,17 +271,6 @@
         <button type="submit">Notify Me →</button>
     </form>
     <p style="margin-top: 1rem; font-size: 0.8rem; color: #aaa;">No spam. Unsubscribe anytime.</p>
-</div>
-
-<!-- Bottom Ad -->
-<div class="ad-container">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9372101106094036"
-         data-ad-slot="9123456791"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <!-- Areas We'll Cover -->
@@ -346,9 +299,9 @@
 </footer>
 
 <script>
-    // Countdown Timer - Set launch date (adjust as needed)
+    // Countdown Timer
     function updateCountdown() {
-        const launchDate = new Date('August 1, 2026 00:00:00').getTime();
+        const launchDate = new Date('September 1, 2026 00:00:00').getTime();
         const now = new Date().getTime();
         const distance = launchDate - now;
         
@@ -365,13 +318,6 @@
     
     updateCountdown();
     setInterval(updateCountdown, 1000);
-    
-    // Ad refresh
-    setTimeout(() => {
-        if (typeof(adsbygoogle) !== 'undefined') {
-            try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
-        }
-    }, 2000);
 </script>
 
 </body>
