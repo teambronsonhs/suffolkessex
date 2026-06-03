@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suffolk & Essex Builder | Professional Building Services | Extensions, Renovations, New Builds</title>
+    <meta name="description" content="Professional builder serving Suffolk and Essex. House extensions, loft conversions, renovations, and new builds. Free quotes. Fully insured. Rated 5 stars.">
+    <meta name="keywords" content="builder Suffolk, builder Essex, house extension Suffolk, loft conversion Essex, building contractor, renovation specialist, new build homes">
+    <meta name="author" content="Suffolk & Essex Builder">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://suffolkessexbuilder.co.uk">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9372101106094036" crossorigin="anonymous"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0a2a1a 0%, #1a3a2a 100%);
+            color: #fff;
+            line-height: 1.5;
+            min-height: 100vh;
+        }
+        
+        /* Header */
+        .header {
+            background: rgba(0,0,0,0.7);
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #ff8c00;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+        
+        .logo span {
+            color: #ff8c00;
+        }
+        
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: rgba(0,0,0,0.4);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subhead {
+            font-size: 1.2rem;
+            color: #ddd;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .stars {
+            color: #ffcd4a;
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+        
+        /* Ad Container */
+        .ad-container {
+            max-width: 1200px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+            text-align: center;
+            min-height: 90px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Services Grid */
+        .services {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.15);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #ff8c00;
+        }
+        
+        /* Contact Form */
+        .contact-section {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(0,0,0,0.5);
+            border-radius: 24px;
+            text-align: center;
+        }
+        
+        .contact-section h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .email-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .email-form input {
+            padding: 0.8rem 1rem;
+            border-radius: 50px;
+            border: none;
+            width: 250px;
+            font-size: 1rem;
+        }
+        
+        .email-form button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            border: none;
+            background: #ff8c00;
+            color: #0a0c10;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        
+        .email-form button:hover {
+            background: #ffaa33;
+            transform: scale(1.02);
+        }
+        
+        /* Phone Button */
+        .phone-btn {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            transition: 0.2s;
+        }
+        
+        .phone-btn:hover {
+            background: #c0392b;
+            transform: scale(1.02);
+        }
+        
+        /* Areas */
+        .areas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .area-tag {
+            background: rgba(255,255,255,0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0,0,0,0.5);
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 2rem;
+        }
+        
+        footer a {
+            color: #ff8c00;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">SUFFOLK & ESSEX <span>BUILDER</span></div>
+</div>
+
+<!-- Top Ad -->
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9372101106094036"
+         data-ad-slot="9123456789"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="hero">
+    <h1>Professional Builder <span style="color:#ff8c00;">Suffolk & Essex</span></h1>
+    <div class="stars">★★★★★ 5.0 (87 reviews)</div>
+    <p class="subhead">House extensions • Loft conversions • Renovations • New builds<br>Fully insured | Free quotes | 15+ years experience</p>
+    <a href="tel:+447936342380" class="phone-btn">📞 Call for Free Quote: 07936 342380</a>
+</div>
+
+<!-- Mid Ad -->
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9372101106094036"
+         data-ad-slot="9123456790"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- Services -->
+<div class="services">
+    <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>House Extensions</h3>
+        <p>Side, rear, wrap-around, and two-storey extensions. Increase your living space and property value.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Loft Conversions</h3>
+        <p>Velux, dormer, and mansard conversions. Turn your loft into a bedroom, office, or studio.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🔨</div>
+        <h3>Full Renovations</h3>
+        <p>Complete house renovations, kitchen fitting, bathroom installation, and internal remodeling.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🏡</div>
+        <h3>New Builds</h3>
+        <p>Custom homes and self-build projects. From foundations to finishing touches.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">🚧</div>
+        <h3>Extensions & Conversions</h3>
+        <p>Garage conversions, basement conversions, and outbuilding construction.</p>
+    </div>
+    <div class="service-card">
+        <div class="service-icon">📐</div>
+        <h3>Planning & Design</h3>
+        <p>Planning permission assistance, building regulations, and architectural drawings.</p>
+    </div>
+</div>
+
+<!-- Bottom Ad -->
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-9372101106094036"
+         data-ad-slot="9123456791"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<!-- Contact & Email Capture -->
+<div class="contact-section">
+    <h2>Get a Free Quote</h2>
+    <p>Enter your email below and we'll send you a detailed quote within 24 hours.</p>
+    
+    <form class="email-form" action="#" method="POST">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Get Quote →</button>
+    </form>
+    
+    <p style="margin-top: 1rem; font-size: 0.9rem;">Or call us directly: <a href="tel:+447936342380" style="color:#ff8c00;">07936 342380</a></p>
+    
+    <div class="areas">
+        <span class="area-tag">Colchester</span>
+        <span class="area-tag">Chelmsford</span>
+        <span class="area-tag">Ipswich</span>
+        <span class="area-tag">Braintree</span>
+        <span class="area-tag">Maldon</span>
+        <span class="area-tag">Sudbury</span>
+        <span class="area-tag">Clacton</span>
+        <span class="area-tag">Harwich</span>
+        <span class="area-tag">Bury St Edmunds</span>
+        <span class="area-tag">Felixstowe</span>
+    </div>
+</div>
+
+<footer>
+    <p>© Suffolk & Essex Builder 2026 — Professional Building Services</p>
+    <p>Fully insured | NHBC registered | 15+ years experience | Free estimates</p>
+    <p>Serving: Suffolk, Essex, Colchester, Chelmsford, Ipswich, Braintree, and surrounding areas</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+</footer>
+
+<!-- Extra Ad Refresh -->
+<script>
+    setTimeout(() => {
+        if (typeof(adsbygoogle) !== 'undefined') {
+            try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+        }
+    }, 2000);
+</script>
+
+</body>
+</html>
