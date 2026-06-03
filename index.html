@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suffolk & Essex Builder | Professional Building Services | Extensions, Renovations, New Builds</title>
-    <meta name="description" content="Professional builder serving Suffolk and Essex. House extensions, loft conversions, renovations, and new builds. Free quotes. Fully insured. Rated 5 stars.">
-    <meta name="keywords" content="builder Suffolk, builder Essex, house extension Suffolk, loft conversion Essex, building contractor, renovation specialist, new build homes">
+    <title>Suffolk & Essex Builder | Coming Soon - Professional Building Services</title>
+    <meta name="description" content="Professional building services coming soon to Suffolk and Essex. House extensions, loft conversions, renovations, and new builds. Sign up for updates and early access.">
+    <meta name="keywords" content="builder Suffolk, builder Essex, house extension, loft conversion, building contractor, renovation specialist, new build homes">
     <meta name="author" content="Suffolk & Essex Builder">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://suffolkessexbuilder.co.uk">
@@ -49,13 +49,23 @@
         /* Hero */
         .hero {
             text-align: center;
-            padding: 3rem 1rem;
+            padding: 4rem 1rem;
             background: rgba(0,0,0,0.4);
         }
         
         h1 {
-            font-size: 2.2rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            background: #ff8c00;
+            color: #0a0c10;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
         }
         
         .subhead {
@@ -65,10 +75,32 @@
             margin: 0 auto;
         }
         
-        .stars {
-            color: #ffcd4a;
-            margin: 1rem 0;
-            font-size: 1.2rem;
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .countdown-box {
+            background: rgba(0,0,0,0.6);
+            padding: 1rem;
+            border-radius: 12px;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #ff8c00;
+        }
+        
+        .countdown-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
         }
         
         /* Ad Container */
@@ -85,45 +117,37 @@
             justify-content: center;
         }
         
-        /* Services Grid */
-        .services {
+        /* Services Preview */
+        .services-preview {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 1rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-        
-        .service-card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 1.5rem;
             text-align: center;
-            transition: transform 0.3s;
-            border: 1px solid rgba(255,255,255,0.2);
         }
         
-        .service-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255,255,255,0.15);
+        .services-preview h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .service-icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
         }
         
         .service-icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
         }
         
-        .service-card h3 {
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-            color: #ff8c00;
-        }
-        
-        /* Contact Form */
-        .contact-section {
-            max-width: 600px;
+        /* Email Signup */
+        .signup-section {
+            max-width: 500px;
             margin: 2rem auto;
             padding: 2rem;
             background: rgba(0,0,0,0.5);
@@ -131,8 +155,14 @@
             text-align: center;
         }
         
-        .contact-section h2 {
+        .signup-section h2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .signup-section p {
             margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #ddd;
         }
         
         .email-form {
@@ -140,14 +170,14 @@
             flex-wrap: wrap;
             gap: 0.5rem;
             justify-content: center;
-            margin-top: 1rem;
         }
         
         .email-form input {
             padding: 0.8rem 1rem;
             border-radius: 50px;
             border: none;
-            width: 250px;
+            flex: 1;
+            min-width: 200px;
             font-size: 1rem;
         }
         
@@ -167,32 +197,14 @@
             transform: scale(1.02);
         }
         
-        /* Phone Button */
-        .phone-btn {
-            display: inline-block;
-            background: #e74c3c;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin: 1rem 0;
-            transition: 0.2s;
-        }
-        
-        .phone-btn:hover {
-            background: #c0392b;
-            transform: scale(1.02);
-        }
-        
         /* Areas */
         .areas {
+            max-width: 1000px;
+            margin: 1rem auto;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 0.5rem;
-            margin: 1rem 0;
         }
         
         .area-tag {
@@ -219,10 +231,14 @@
         
         @media (max-width: 768px) {
             h1 {
-                font-size: 1.6rem;
+                font-size: 1.8rem;
             }
-            .services {
-                grid-template-columns: 1fr;
+            .countdown-box {
+                min-width: 60px;
+                padding: 0.5rem;
+            }
+            .countdown-number {
+                font-size: 1.5rem;
             }
         }
     </style>
@@ -245,10 +261,17 @@
 </div>
 
 <div class="hero">
-    <h1>Professional Builder <span style="color:#ff8c00;">Suffolk & Essex</span></h1>
-    <div class="stars">★★★★★ 5.0 (87 reviews)</div>
-    <p class="subhead">House extensions • Loft conversions • Renovations • New builds<br>Fully insured | Free quotes | 15+ years experience</p>
-    <a href="tel:+447936342380" class="phone-btn">📞 Call for Free Quote: 07936 342380</a>
+    <div class="coming-soon">🚧 COMING SOON 🚧</div>
+    <h1>Professional Builder<br><span style="color:#ff8c00;">Suffolk & Essex</span></h1>
+    <p class="subhead">House extensions • Loft conversions • Renovations • New builds</p>
+    
+    <!-- Countdown Timer -->
+    <div class="countdown" id="countdown">
+        <div class="countdown-box"><div class="countdown-number" id="days">00</div><div class="countdown-label">Days</div></div>
+        <div class="countdown-box"><div class="countdown-number" id="hours">00</div><div class="countdown-label">Hours</div></div>
+        <div class="countdown-box"><div class="countdown-number" id="minutes">00</div><div class="countdown-label">Minutes</div></div>
+        <div class="countdown-box"><div class="countdown-number" id="seconds">00</div><div class="countdown-label">Seconds</div></div>
+    </div>
 </div>
 
 <!-- Mid Ad -->
@@ -262,38 +285,28 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<!-- Services -->
-<div class="services">
-    <div class="service-card">
-        <div class="service-icon">🏠</div>
-        <h3>House Extensions</h3>
-        <p>Side, rear, wrap-around, and two-storey extensions. Increase your living space and property value.</p>
+<!-- Services Preview -->
+<div class="services-preview">
+    <h2>What We'll Offer</h2>
+    <div class="service-icons">
+        <span class="service-icon">🏠 House Extensions</span>
+        <span class="service-icon">🏗️ Loft Conversions</span>
+        <span class="service-icon">🔨 Full Renovations</span>
+        <span class="service-icon">🏡 New Builds</span>
+        <span class="service-icon">🚧 Garage Conversions</span>
+        <span class="service-icon">📐 Planning & Design</span>
     </div>
-    <div class="service-card">
-        <div class="service-icon">🏗️</div>
-        <h3>Loft Conversions</h3>
-        <p>Velux, dormer, and mansard conversions. Turn your loft into a bedroom, office, or studio.</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">🔨</div>
-        <h3>Full Renovations</h3>
-        <p>Complete house renovations, kitchen fitting, bathroom installation, and internal remodeling.</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">🏡</div>
-        <h3>New Builds</h3>
-        <p>Custom homes and self-build projects. From foundations to finishing touches.</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">🚧</div>
-        <h3>Extensions & Conversions</h3>
-        <p>Garage conversions, basement conversions, and outbuilding construction.</p>
-    </div>
-    <div class="service-card">
-        <div class="service-icon">📐</div>
-        <h3>Planning & Design</h3>
-        <p>Planning permission assistance, building regulations, and architectural drawings.</p>
-    </div>
+</div>
+
+<!-- Email Signup -->
+<div class="signup-section">
+    <h2>📧 Get Early Access</h2>
+    <p>Be the first to know when we launch — plus receive exclusive discounts and free quotes.</p>
+    <form class="email-form" action="#" method="POST">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Notify Me →</button>
+    </form>
+    <p style="margin-top: 1rem; font-size: 0.8rem; color: #aaa;">No spam. Unsubscribe anytime.</p>
 </div>
 
 <!-- Bottom Ad -->
@@ -307,41 +320,53 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
-<!-- Contact & Email Capture -->
-<div class="contact-section">
-    <h2>Get a Free Quote</h2>
-    <p>Enter your email below and we'll send you a detailed quote within 24 hours.</p>
-    
-    <form class="email-form" action="#" method="POST">
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit">Get Quote →</button>
-    </form>
-    
-    <p style="margin-top: 1rem; font-size: 0.9rem;">Or call us directly: <a href="tel:+447936342380" style="color:#ff8c00;">07936 342380</a></p>
-    
-    <div class="areas">
-        <span class="area-tag">Colchester</span>
-        <span class="area-tag">Chelmsford</span>
-        <span class="area-tag">Ipswich</span>
-        <span class="area-tag">Braintree</span>
-        <span class="area-tag">Maldon</span>
-        <span class="area-tag">Sudbury</span>
-        <span class="area-tag">Clacton</span>
-        <span class="area-tag">Harwich</span>
-        <span class="area-tag">Bury St Edmunds</span>
-        <span class="area-tag">Felixstowe</span>
-    </div>
+<!-- Areas We'll Cover -->
+<div class="areas">
+    <span class="area-tag">Colchester</span>
+    <span class="area-tag">Chelmsford</span>
+    <span class="area-tag">Ipswich</span>
+    <span class="area-tag">Braintree</span>
+    <span class="area-tag">Maldon</span>
+    <span class="area-tag">Sudbury</span>
+    <span class="area-tag">Clacton</span>
+    <span class="area-tag">Harwich</span>
+    <span class="area-tag">Bury St Edmunds</span>
+    <span class="area-tag">Felixstowe</span>
+    <span class="area-tag">Woodbridge</span>
+    <span class="area-tag">Stowmarket</span>
+    <span class="area-tag">Witham</span>
+    <span class="area-tag">Brentwood</span>
 </div>
 
 <footer>
-    <p>© Suffolk & Essex Builder 2026 — Professional Building Services</p>
-    <p>Fully insured | NHBC registered | 15+ years experience | Free estimates</p>
-    <p>Serving: Suffolk, Essex, Colchester, Chelmsford, Ipswich, Braintree, and surrounding areas</p>
+    <p>© Suffolk & Essex Builder 2026 — Coming Soon</p>
+    <p>Fully insured | NHBC registered | 15+ years experience</p>
+    <p>Serving: Suffolk, Essex, and surrounding areas</p>
     <p><a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
 </footer>
 
-<!-- Extra Ad Refresh -->
 <script>
+    // Countdown Timer - Set launch date (adjust as needed)
+    function updateCountdown() {
+        const launchDate = new Date('August 1, 2026 00:00:00').getTime();
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+        
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById('days').innerText = days.toString().padStart(2, '0');
+        document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+        document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+        document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    
+    // Ad refresh
     setTimeout(() => {
         if (typeof(adsbygoogle) !== 'undefined') {
             try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
